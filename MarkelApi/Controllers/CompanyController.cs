@@ -16,6 +16,7 @@ namespace MarkelApi.Controllers
             this.claimRepository = claimRepository;
         }
 
+        [HttpGet]
         [Route("{companyId}")]
         public async Task<IActionResult> GetCompany(int companyId)
         {
@@ -24,6 +25,7 @@ namespace MarkelApi.Controllers
             return Ok(company);
         }
 
+        [HttpGet]
         [Route("{companyId}/claims")]
         public async Task<IActionResult> GetClaims(int companyId)
         {
