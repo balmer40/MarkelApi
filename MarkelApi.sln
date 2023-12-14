@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkelApi", "MarkelApi\MarkelApi.csproj", "{8ACE2580-1AE0-44BE-AB77-56AE4DFDF81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkelApi.UnitTests", "MarkelApi.UnitTests\MarkelApi.UnitTests.csproj", "{CC4260F5-162A-4290-9F47-27B5A9FFAD41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ACE2580-1AE0-44BE-AB77-56AE4DFDF81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACE2580-1AE0-44BE-AB77-56AE4DFDF81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACE2580-1AE0-44BE-AB77-56AE4DFDF81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACE2580-1AE0-44BE-AB77-56AE4DFDF81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4260F5-162A-4290-9F47-27B5A9FFAD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4260F5-162A-4290-9F47-27B5A9FFAD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4260F5-162A-4290-9F47-27B5A9FFAD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4260F5-162A-4290-9F47-27B5A9FFAD41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C6D52DC-97EB-4863-9C29-A57CA6950FD8}
+	EndGlobalSection
+EndGlobal
