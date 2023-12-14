@@ -25,7 +25,7 @@ namespace MarkelApi.Controllers
             return Ok(claim);
         }
 
-        [HttpPost]
+        [HttpPut]
         public async Task<IActionResult> UpdateClaim(Claim claim)
         {
             await this.claimRepository.UpdateClaim(claim);
