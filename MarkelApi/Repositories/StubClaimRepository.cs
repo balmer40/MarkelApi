@@ -12,7 +12,7 @@ namespace MarkelApi.Repositories
 
         public Task<Claim> GetClaim(string ucr)
         {
-            return Task.FromResult(CreateClaim());
+            return Task.FromResult(CreateClaim(ucr));
         }
 
         public Task UpdateClaim(Claim claim)
@@ -20,11 +20,11 @@ namespace MarkelApi.Repositories
             return Task.CompletedTask;
         }
 
-        private Claim CreateClaim()
+        private Claim CreateClaim(string ucr = null)
         {
             return new Claim
             {
-                Ucr = "stubUcr",
+                Ucr = ucr ??  "stubUcr",
                 Name = "stubName",
                 ClaimDate = DateTime.Today,
                 LossDate = DateTime.Today,

@@ -3,13 +3,20 @@ using MarkelApi.Models;
 
 namespace MarkelApi.Repositories
 {
-	public class StubCompanyRepository : ICompanyRepository
-	{
+    public class StubCompanyRepository : ICompanyRepository
+    {
         public Task<Company> GetCompany(int companyId)
         {
-            var company = new Company
+            var company = CreateCompany(companyId);
+
+            return Task.FromResult(company);
+        }
+
+        private Company CreateCompany(int companyId)
+        {
+            return new Company
             {
-                Id = 1,
+                Id = companyId,
                 Name = "stubName",
                 Address1 = "stubAddressName1",
                 Address2 = "stubAddressName2",
@@ -19,8 +26,6 @@ namespace MarkelApi.Repositories
                 Active = false,
                 InsuranceDateEnd = DateTime.Today
             };
-
-            return Task.FromResult(company);
         }
     }
 }
